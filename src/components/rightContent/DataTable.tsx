@@ -40,24 +40,27 @@ export default function DataTable(props: DataTableProps) {
         position: "relative",
       }}
     >
-      <Box
-        sx={{
-          display: "flex",
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          justifyContent: "center",
-          alignItems: "center",
-          zIndex: 100,
-        }}
-      >
-        <ClipLoader
-          color="#36d7b7"
-          loading={loading}
-          size={50}
-          data-testid="loader"
-        />
-      </Box>
+      {loading && (
+        <Box
+          sx={{
+            display: "flex",
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 100,
+          }}
+        >
+          <ClipLoader
+            color="#36d7b7"
+            loading={loading}
+            size={50}
+            data-testid="loader"
+          />
+        </Box>
+      )}
+
       <Box
         sx={{
           display: "flex",
