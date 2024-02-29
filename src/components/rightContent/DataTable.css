@@ -1,0 +1,47 @@
+.dataTable-left {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.table-cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  height: 50px;
+  width: 170px;
+  font-size: 14px;
+}
+
+.dataTable-left .table-cell:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.dataTable-right {
+  display: flex;
+  overflow: auto;
+  width: 650px;
+}
+
+.dataTable-right .table-cell:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.dataTable-right::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+}
+.dataTable-right::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.dataTable-right::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dataTable-right::-webkit-scrollbar-thumb:window-inactive {
+  background-color: rgba(0, 0, 0, 0.2);
+}
