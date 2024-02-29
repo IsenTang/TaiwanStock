@@ -1,6 +1,7 @@
 ### 启动方式
 
 ```shel
+npm install / yarn
 npm run dev
 ```
 
